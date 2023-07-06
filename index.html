@@ -22,7 +22,7 @@
         <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
         <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
         <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
-<script src="babylon.glTFFileLoader.js"></script>
+        <script src="babylon.glTFFileLoader.js"></script>
         <style>
             html, body {
                 overflow: hidden;
@@ -88,6 +88,9 @@
 
     // Our built-in 'ground' shape.
     var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
+
+
+    BABYLON.SceneLoader.ImportMesh("", "https://raw.githubusercontent.com/AVP-backup/webGLdemo/main/models/", "test_01.glb", scene);
 
     return scene;
 };
