@@ -76,7 +76,7 @@
 
     // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
     var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 0, 1), scene);
-    var light2 = new BABYLON.HemisphericLight("light2", new BABYLON.Vector3(1, 1, 1), scene);
+    var light2 = new BABYLON.HemisphericLight("light2", new BABYLON.Vector3(1, 1, 10), scene);
     const light3 = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(1, 2, 1), scene);
     const light4 = new BABYLON.DirectionalLight("DirectionalLight", new BABYLON.Vector3(0, -1, 0.5), scene);
     const light5 = new BABYLON.SpotLight("spotLight", new BABYLON.Vector3(0, 30, 10), new BABYLON.Vector3(0, -1, 0), Math.PI / 3, 2, scene);
