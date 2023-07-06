@@ -66,7 +66,7 @@
     var scene = new BABYLON.Scene(engine);
 
     // This creates and positions a free camera (non-mesh)
-    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -15), scene);
+    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 3, -15), scene);
 
     // This targets the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
@@ -81,7 +81,7 @@
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 10.7;
 
-    light4.intensity = 15.5;
+    light4.intensity = 25.5;
 
     // Our built-in 'sphere' shape.
     // var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 2, segments: 32}, scene);
