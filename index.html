@@ -75,12 +75,12 @@
     camera.attachControl(canvas, true);
 
     // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
-    var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 0, 1), scene);
-    var light2 = new BABYLON.HemisphericLight("light2", new BABYLON.Vector3(-10, 0, 1), scene);
+    var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(20, 20, 1), scene);
+
     const light4 = new BABYLON.DirectionalLight("DirectionalLight", new BABYLON.Vector3(-10, -10, 60), scene);
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 1.7;
-    light2.intensity = 5.5;
+
     light4.intensity = 10.5;
 
     // Our built-in 'sphere' shape.
