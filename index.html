@@ -22,7 +22,7 @@
         <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
         <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
         <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
-        <script src="babylon.glTFFileLoader.js"></script>
+<script src="babylon.glTFFileLoader.js"></script>
         <style>
             html, body {
                 overflow: hidden;
@@ -77,20 +77,12 @@
     // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
     var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
 
-
-    let env = result.meshes[0];
-    let allMeshes = env.getChildMeshes();
-
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 0.7;
 
     // Our built-in 'sphere' shape.
     var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 2, segments: 32}, scene);
-    
-    // const result = SceneLoader.ImportMesh(null, "./models/", "envSetting.glb", this._scene);
-//     const inter =  BABYLON.SceneLoader.ImportMesh("test01", "./models", "test01.glb", scene, function(newMeshes){
-    
-// });
+
     // Move the sphere upward 1/2 its height
     sphere.position.y = 1;
 
