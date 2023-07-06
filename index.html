@@ -88,7 +88,9 @@
     var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 2, segments: 32}, scene);
 
     // const result = SceneLoader.ImportMesh(null, "./models/", "envSetting.glb", this._scene);
-    const inter =  BABYLON.SceneLoader.ImportMesh("test01", "./models", "test01.glb", scene);
+    const inter =  BABYLON.SceneLoader.ImportMesh("test01", "./models", "test01.glb", scene, function(newMeshes){
+    
+});
     // Move the sphere upward 1/2 its height
     sphere.position.y = 1;
 
